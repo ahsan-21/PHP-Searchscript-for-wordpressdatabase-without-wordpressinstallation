@@ -1,0 +1,56 @@
+/*
+ * Main Page Styling
+*/
+
+body {
+	padding-top: 100px;
+}
+
+.loader {
+	display: none;
+	margin-top: 20px;
+	text-align: center;
+}
+.loader img {
+	width: 28px;
+}
+
+.dataWrapper .highlight {
+	background: hsl(65, 100%, 50%);
+}
+.dataWrapper .singleData .content {
+	padding: 10px 0px;
+}
+
+.suggestionList {
+	position: relative;
+}
+.suggestionList .loader {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+}
+.suggestionList #suggestionListData {
+	padding-top: 30px;
+}
+
+.awesomplete {
+	display: block !important;
+}
+.awesomplete > ul {
+	margin-top: 42px !important;
+}
+
+.stylish-input-group .input-group-addon{
+	background: white !important;
+}
+.stylish-input-group .form-control{
+	border-right:0;
+	box-shadow:0 0 0;
+	border-color:#ccc;
+}
+.stylish-input-group button{
+	border:0;
+	background:transparent;
+}
