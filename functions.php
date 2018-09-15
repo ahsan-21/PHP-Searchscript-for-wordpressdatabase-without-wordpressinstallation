@@ -142,7 +142,8 @@ class MainSite
 			) as pc_tbl2 on mp.ID=pc_tbl2.post_id
 
 			where mp.post_status = "publish" and (mp.post_title like "%'.$word.'%" || mp.post_content like "%'.$word.'%"
-			|| pt_tbl1.post_tags like "%'.$word.'%" || pc_tbl2.post_categories like "%'.$word.'%");
+			|| pt_tbl1.post_tags like "%'.$word.'%" || pc_tbl2.post_categories like "%'.$word.'%")
+			order by mp.ID DESC;
 		';
 
 		return $this->queryExecute($query);
